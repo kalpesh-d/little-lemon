@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla&family=Markazi+Text:wght@500&display=swap");
 
+:root {
+  --primary-color-gray: #495e57;
+  --primary-color-yellow: #f4ce14;
+}
+
 * {
   margin: 0;
   padding: 0;

@@ -1,0 +1,20 @@
+.navigation {
+  height: 10rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logo {
+  display: inline-block;
+  height: 5rem;
+}
+
+.list {
+  display: inline-block;
+  margin-left: 2.3rem;
+}
+
+.list > a {
+  color: black;
+}
