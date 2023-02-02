@@ -1,6 +1,14 @@
+import Special from './Special';
+import Testimonial from './Testimonial';
+import About from './About';
+
 function Main() {
     return(
-        <main></main>
+        <main>
+            <Special/>
+            <Testimonial />
+            <About />
+        </main>
     );
 }
 
