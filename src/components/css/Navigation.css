@@ -18,3 +18,14 @@
 .list > a {
   color: black;
 }
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
+  .navigation {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    height: 4rem;
+  }
+}
