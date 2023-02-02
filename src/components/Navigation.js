@@ -1,16 +1,17 @@
+import './css/Navigation.css'
 import Logo from '../assets/Logo.svg';
 
 function Navigation() {
     return(
-        <nav>
-            <img src={Logo} alt="Little Lemon"/>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Menu</a></li>
-                <li><a href="">Reservation</a></li>
-                <li><a href="">Order Online</a></li>
-                <li><a href="">Login</a></li>
+        <nav className='navigation'>
+            <img src={Logo} alt="Little Lemon" className='primary-logo'/>
+            <ul className='nav-lists'>
+                <li className='list'><a href="">Home</a></li>
+                <li className='list'><a href="">About</a></li>
+                <li className='list'><a href="">Menu</a></li>
+                <li className='list'><a href="">Reservation</a></li>
+                <li className='list'><a href="">Order Online</a></li>
+                <li className='list'><a href="">Login</a></li>
             </ul>
         </nav>
     );
