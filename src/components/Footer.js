@@ -1,33 +1,35 @@
+import './css/Footer.css'
+
 function Footer() {
     return (
         <footer>
-            <img src={require('../assets/footer logo.png')} alt="Little Lemon" />
+            <img src={require('../assets/footer logo.png')} alt="Little Lemon" className='foot-logo'/>
 
             {/* Doormat Navigation */}
-            <ul>
-                <h4>Doormat Navigation</h4>
-                <li>Home</li>
-                <li>About</li>
-                <li>Menu</li>
-                <li>Reservations</li>
-                <li>Order Online</li>
-                <li>Login</li>
+            <ul className='foot-lists'>
+                <h4 className='foot-heading'>Doormat<br/> Navigation</h4>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Menu</a></li>
+                <li><a href="/">Reservations</a></li>
+                <li><a href="/">Order Online</a></li>
+                <li><a href="/">Login</a></li>
             </ul>
 
             {/* Contact */}
-            <ul>
-                <h4>Contact</h4>
-                <li>Address</li>
-                <li>Phone Number</li>
-                <li>Email</li>
+            <ul className='foot-lists'>
+                <h4 className='foot-heading'>Contact</h4>
+                <li><a href="/">Address</a></li>
+                <li><a href="/">Phone Number</a></li>
+                <li><a href="/">Email</a></li>
             </ul>
 
             {/* Social Media */}
-            <ul>
-                <h4>Social Media Links</h4>
-                <li>Address</li>
-                <li>Phone Number</li>
-                <li>Email</li>
+            <ul className='foot-lists'>
+                <h4 className='foot-heading'>Social Media Links</h4>
+                <li><a href="/">Address</a></li>
+                <li><a href="/">Phone Number</a></li>
+                <li><a href="/">Email</a></li>
             </ul>
         </footer>
     );
