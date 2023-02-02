@@ -3,6 +3,10 @@
 :root {
   --primary-color-gray: #495e57;
   --primary-color-yellow: #f4ce14;
+  --secondary-color-pink: #ee9972;
+  --secondary-color-lightpink: #fbdabb;
+  --highlight-color-light: #edefee;
+  --highlight-color-dark: #333333;
 }
 
 * {
