@@ -15,7 +15,7 @@
   margin-left: 2.3rem;
 }
 
-.list > a {
+.list > :first-child {
   color: black;
 }
 
