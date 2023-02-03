@@ -16,7 +16,9 @@ function Hero() {
                         <button className='btn'>Reserve a Table</button>
                     </Link>
                 </div>
-                <img src={require('../assets/restauranfood.jpg')} className='img' alt='Restaurant Food'/>
+                <div className='hero-img'>
+                    <img src={require('../assets/restauranfood.jpg')} className='img' alt='Restaurant Food'/>
+                </div>
             </div>
         </section>
     );

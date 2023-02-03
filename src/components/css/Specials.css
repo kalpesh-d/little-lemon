@@ -1,0 +1,16 @@
+.top-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.special-heading {
+  font-size: 3.5rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 23rem;
+  margin: 5.5rem 0;
+}
