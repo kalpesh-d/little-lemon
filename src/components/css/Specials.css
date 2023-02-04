@@ -14,3 +14,28 @@
   padding: 0 23rem;
   margin: 5.5rem 0;
 }
+
+.btn-m {
+  margin: 0 0 0 10rem;
+}
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
+  .top-content {
+    flex-direction: column;
+    margin-top: 2rem;
+    padding: 0 1rem;
+  }
+
+  .cards {
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 3rem 0 0 0;
+  }
+
+  .btn-m {
+    margin: 1rem 0 0 0;
+    height: 3.5rem;
+    width: 15rem;
+  }
+}

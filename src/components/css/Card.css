@@ -1,6 +1,3 @@
-.card {
-}
-
 .card-img {
   width: 26.4rem;
   height: 18.5rem;
@@ -17,4 +14,50 @@
   background-color: #edefee;
   width: 26.5rem;
   height: 25.3rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.card-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 2rem;
+}
+
+.card-name {
+  font-family: markazi;
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+
+.card-price {
+  color: #ee9972;
+  font-weight: bold;
+}
+
+.card-desc {
+  color: #495e57;
+  text-align: left;
+  padding: 0 2rem;
+}
+
+.delivery {
+  display: flex;
+  padding: 2rem 2rem;
+}
+
+.card-delivery {
+  padding-right: 1rem;
+}
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
+  .card {
+    margin-bottom: 2.5rem;
+  }
+
+  .card-content {
+    border-radius: 0 0 16px 16px;
+  }
 }
