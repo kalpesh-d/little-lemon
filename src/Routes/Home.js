@@ -2,6 +2,7 @@ import Navigation from '../components/Navigation';
 import Hero from  '../components/Hero';
 import Footer from '../components/Footer';
 import Specials from '../components/Specials';
+import Testimonial from '../components/Testimonial';
 
 function Home() {
     return(
@@ -9,6 +10,7 @@ function Home() {
             <Navigation />
             <Hero />
             <Specials/>
+            <Testimonial/>
             <Footer />
         </>
     );

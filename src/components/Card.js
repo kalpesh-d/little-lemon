@@ -1,5 +1,5 @@
 import './css/Card.css';
-import vehicle from '../assets/Group.svg'
+import vehicle from '../assets/Group.svg';
 
 function Card ({img, alt, name, description, price}){
     return(
