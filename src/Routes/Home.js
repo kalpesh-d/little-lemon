@@ -3,6 +3,7 @@ import Hero from  '../components/Hero';
 import Footer from '../components/Footer';
 import Specials from '../components/Specials';
 import Testimonial from '../components/Testimonial';
+import About from '../components/About';
 
 function Home() {
     return(
@@ -11,6 +12,7 @@ function Home() {
             <Hero />
             <Specials/>
             <Testimonial/>
+            <About/>
             <Footer />
         </>
     );

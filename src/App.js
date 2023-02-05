@@ -1,6 +1,5 @@
 import { Route, Routes } from 'react-router';
 import Home from './Routes/Home';
-import About from './Routes/About';
 import Menu from './Routes/Menu';
 import OrderOnline from './Routes/OrderOnline'
 import Reservation from './Routes/Reservation';
@@ -12,7 +11,6 @@ function App() {
     <>
       <Routes>
         <Route path='/' element={<Home />}/>
-        <Route path='/about' element={<About />}/>
         <Route path='/menu' element={<Menu />}/>
         <Route path='/reservation' element={<Reservation />}/>
         <Route path='/order-online' element={<OrderOnline />}/>
