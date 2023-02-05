@@ -6,7 +6,7 @@ import Card from './Card';
 
 function Specials() {
     return (
-        <section className='specials'>
+        <section className='specials' id='menu'>
             <div className='top-content'>
                 <h1 className='special-heading'>Specials</h1>
                 <button className='btn btn-m'>Online Menu</button>

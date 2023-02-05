@@ -9,8 +9,8 @@ function Footer() {
             <ul className='foot-lists'>
                 <h4 className='foot-heading'>Doormat<br/> Navigation</h4>
                 <li><a href="/">Home</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
                 <li><a href="/">Reservations</a></li>
                 <li><a href="/">Order Online</a></li>
                 <li><a href="/">Login</a></li>
@@ -19,9 +19,9 @@ function Footer() {
             {/* Contact */}
             <ul className='foot-lists'>
                 <h4 className='foot-heading'>Contact</h4>
-                <li><a href="/">Address</a></li>
-                <li><a href="/">Phone Number</a></li>
-                <li><a href="/">Email</a></li>
+                <li>Address</li>
+                <li>Phone Number</li>
+                <li>Email</li>
             </ul>
 
             {/* Social Media */}

@@ -10,8 +10,8 @@ function Navigation() {
             </Link>
             <ul className='nav-lists'>
                 <li className='list'><Link to="/">Home</Link></li>
-                <li className='list'><Link to="/about">About</Link></li>
-                <li className='list'><Link to="/menu">Menu</Link></li>
+                <li className='list'><a href="#about">About</a></li>
+                <li className='list'><a href="#menu">Menu</a></li>
                 <li className='list'><Link to="/reservation">Reservation</Link></li>
                 <li className='list'><Link to="/order-online">Order Online</Link></li>
                 <li className='list'><Link to="/login">Login</Link></li>
