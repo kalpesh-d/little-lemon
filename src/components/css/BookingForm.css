@@ -1,0 +1,23 @@
+form {
+  height: 50vh;
+  margin: 0 auto;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: center;
+  height: 15rem;
+  justify-content: space-evenly;
+}
+
+label {
+  margin-right: 1rem;
+}
+
+input[type="submit"] {
+  height: 4rem;
+  width: 20rem;
+}

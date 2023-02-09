@@ -1,10 +1,13 @@
 import Navigation from "../components/Navigation";
+import BookingForm from "../components/BookingForm";
+import Footer from "../components/Footer";
 
 function Reservation() {
     return(
         <>
             <Navigation />
-            <h1>This is reservation</h1>
+            <BookingForm/>
+            <Footer/>
         </>
     );
 }
