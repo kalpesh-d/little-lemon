@@ -2,6 +2,8 @@ import { useState } from 'react';
 import '../components/css/BookingForm.css'
 
 function BookingPage() {
+    const [name, setName]= useState("");
+    const [email, setEmail]= useState("");
     const [reservationDate, setReservationDate] = useState("");
     const [reservationTime, setReservationTime] = useState("17:00");
     const [numberOfGuests, setNumberOfGuests] = useState(1);
@@ -18,6 +20,8 @@ function BookingPage() {
     const handleSubmit = e => {
         e.preventDefault();
         console.log("Form submitterd",{
+            name,
+            email,
             reservationDate, 
             reservationTime,
             numberOfGuests,
@@ -29,6 +33,18 @@ function BookingPage() {
         <form>
             <div class="form-input">
 
+                <div className="name">
+                    <label htmlFor="res-name">Name</label>
+                    <input type="text" id="res-name" 
+                    value={name} onChange={e=> setName(e.target.value)}/>
+                </div>
+
+                <div className="email">
+                    <label htmlFor="res-email">Email</label>
+                    <input type="email" id="res-email" 
+                    value={email} onChange={e=> setEmail(e.target.value)}/>
+                </div>
+                
                 <div className="date">
                     <label htmlFor="res-date">Choose date</label>
                     <input type="date" id="res-date" 

@@ -6,7 +6,7 @@ function Reservation() {
     return(
         <>
             <Navigation />
-            <BookingForm/>
+            <BookingForm />
             <Footer/>
         </>
     );
