@@ -10,7 +10,7 @@ function BookingPage(props) {
     const [occasion, setOccasion] = useState("");
   
     const [finalTime, setFinalTime] = useState(
-        props.availableTimes.map((times) => <option>{times}</option>)
+        props.availableTimes.map((times) => <option key={times}>{times}</option>)
     );
 
     function handleDateChange(e) {
@@ -26,41 +26,43 @@ function BookingPage(props) {
 
     return(    
         <form>
-            <div class="form-input">
-                <div className="name">
+            <div className="form-input">
+                <h2>Reservation</h2>
+                <p>Enter reservation details</p>
+                <div className="form-group">
                     <label htmlFor="res-name">Full Name</label>
-                    <input type="text" id="res-name" 
-                    value={name} onChange={e => setName(e.target.value)}/>
+                    <input type="text" id="res-name" required="required" placeholder='Enter Name'
+                    value={name} onChange={e => setName(e.target.value)} />
                 </div>
 
-                <div className="email">
+                <div className="form-group">
                     <label htmlFor="res-email">Email</label>
-                    <input type="email" id="res-email" 
+                    <input type="email" id="res-email" placeholder='Enter Email'
                     value={email} onChange={e => setEmail(e.target.value)}/>
                 </div>
 
-                <div className="date">
+                <div className="form-group">
                     <label htmlFor="res-date">Choose date</label>
-                    <input type="date" id="res-date" 
+                    <input type="date" id="res-date" placeholder='Enter Date'
                     value={date} onChange={handleDateChange}/>
                 </div>
 
-                <div className="time">
+                <div className="form-group">
                     <label htmlFor="res-time">Choose time</label>
                     <select id="res-time" >
                         {finalTime}
                     </select>
                 </div>
 
-                <div className="guests">
-                    <label htmlFor="guests">Number of guests</label>    
-                    <input type="number" placeholder={1} min={1} max={10} id="guests" 
+                <div className="form-group">
+                    <label htmlFor="res-guests">Number of guests</label>    
+                    <input type="number" placeholder={1} min={1} max={10} id="res-guests" 
                     value={numberOfGuests} onChange={e => setNumberOfGuests(e.target.value)}/>
                 </div>
 
-                <div className="ocassion">
-                    <label htmlFor="occasion">Occasion</label>
-                    <select id="occasion" value={occasion} onChange={setOccasion} >
+                <div className="form-group">
+                    <label htmlFor="res-occasion">Occasion</label>
+                    <select id="res-occasion" value={occasion} onChange={setOccasion} >
                       <option>Birthday</option>
                       <option>Engagement</option>
                       <option>Anniversary</option>

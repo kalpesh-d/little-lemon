@@ -1,28 +1,54 @@
 form {
-  font-size: 1.8rem;
   display: flex;
-  height: 50vh;
-  margin: 0 auto;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  margin: 0px 50rem;
+  font-size: 1.8rem;
+  height: 75vh;
 }
 
-.form-input {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  align-content: center;
-  height: 15rem;
-  justify-content: space-evenly;
+input,
+select {
+  display: block;
+  border: 1px solid black;
+  border-radius: 3px;
+  height: 2.5rem;
+  width: 55rem;
+  margin: 0.4rem 0;
 }
 
 label {
-  margin-right: 1rem;
+  text-align: left;
+  position: relative;
+  width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+select {
+  padding: 1px 1rem;
+}
+
+#res-time,
+#res-occasion {
+  width: 58rem;
+  height: 2.8rem;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+}
+
+.form-input > p {
+  margin-bottom: 3rem;
 }
 
 .btn[type="submit"] {
+  margin-top: 2rem;
   height: 4rem;
   width: 20rem;
 }
