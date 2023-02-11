@@ -1,0 +1,18 @@
+.reserve-header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15rem auto 5rem;
+}
+
+.home {
+  height: 4rem;
+  width: 15rem;
+}
+
+@media screen and (min-width: 300px) and (max-width: 900px) {
+  .reserve-header-text {
+    margin: 15rem 7rem 2rem;
+  }
+}

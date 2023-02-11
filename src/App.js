@@ -4,6 +4,7 @@ import Menu from './Routes/Menu';
 import OrderOnline from './Routes/OrderOnline'
 import Reservation from './Routes/Reservation';
 import Login from './Routes/Login';
+import Confirmed from './components/ConfirmedBooking.js'
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path='/reservation' element={<Reservation />}/>
         <Route path='/order-online' element={<OrderOnline />}/>
         <Route path='/login' element={<Login />}/>
+        <Route path='/confirmed' element={<Confirmed />}/>
       </Routes>
     </>
   );

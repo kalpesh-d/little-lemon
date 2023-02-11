@@ -1,6 +1,11 @@
 form {
+  font-size: 1.8rem;
+  display: flex;
   height: 50vh;
   margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-input {
@@ -17,7 +22,7 @@ label {
   margin-right: 1rem;
 }
 
-input[type="submit"] {
+.btn[type="submit"] {
   height: 4rem;
   width: 20rem;
 }
