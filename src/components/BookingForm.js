@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import '../components/css/BookingForm.css'
 
 function BookingPage(props) { 
@@ -24,8 +23,13 @@ function BookingPage(props) {
       setFinalTime(props.availableTimes.map((times) => <option>{times}</option>));
     } 
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        window.location.href = "/confirmed";
+    }
+
     return(    
-        <form>
+        <form onSubmit={handleSubmit}>
             <div className="form-input">
                 <h2>Reservation</h2>
                 <p>Enter reservation details</p>
@@ -50,6 +54,7 @@ function BookingPage(props) {
                 <div className="form-group">
                     <label htmlFor="res-time">Choose time</label>
                     <select id="res-time" required>
+                        <option disabled selected>Select time</option>
                         {finalTime}
                     </select>
                 </div>
@@ -69,9 +74,9 @@ function BookingPage(props) {
                     </select>
                 </div>
             </div>
-            <Link to="/confirmed">
+            <div className='submit'>
                 <button className="btn" type='submit'>Submit</button>
-            </Link>
+            </div>
         </form>
     );
 }
