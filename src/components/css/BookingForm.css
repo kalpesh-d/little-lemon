@@ -30,6 +30,7 @@ input[type="email"],
 input[type="date"],
 input[type="time"],
 input[type="number"],
+input[type="password"],
 select {
   padding: 1px 1rem;
 }
@@ -45,7 +46,8 @@ select {
   align-items: center;
 }
 
-.form-input > p {
+.form-input > p,
+.login-para {
   margin-bottom: 3rem;
 }
 
@@ -76,6 +78,7 @@ select {
   input[type="date"],
   input[type="time"],
   input[type="number"],
+  input[type="password"],
   select {
     padding: 0;
   }
