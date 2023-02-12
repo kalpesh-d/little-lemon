@@ -9,6 +9,8 @@ form {
 
 input,
 select {
+  font-family: "Karla", "Markazi Text", serif;
+  font-size: 1.5rem;
   display: block;
   border: 1px solid black;
   border-radius: 3px;
@@ -51,4 +53,34 @@ select {
   margin-top: 2rem;
   height: 4rem;
   width: 20rem;
+}
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
+  form {
+    height: auto;
+    margin: 2rem 5rem 0;
+  }
+  input {
+    width: 100%;
+  }
+  #res-time,
+  #res-occasion {
+    width: 100%;
+  }
+  .form-group {
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  input[type="time"],
+  input[type="number"],
+  select {
+    padding: 0;
+  }
+
+  .btn[type="submit"] {
+    margin-top: 1rem;
+  }
 }

@@ -31,38 +31,38 @@ function BookingPage(props) {
                 <p>Enter reservation details</p>
                 <div className="form-group">
                     <label htmlFor="res-name">Full Name</label>
-                    <input type="text" id="res-name" required="required" placeholder='Enter Name'
+                    <input type="text" id="res-name" required placeholder='Enter Name'
                     value={name} onChange={e => setName(e.target.value)} />
                 </div>
 
                 <div className="form-group">
                     <label htmlFor="res-email">Email</label>
-                    <input type="email" id="res-email" placeholder='Enter Email'
+                    <input type="email" id="res-email" required placeholder='Enter Email'
                     value={email} onChange={e => setEmail(e.target.value)}/>
                 </div>
 
                 <div className="form-group">
                     <label htmlFor="res-date">Choose date</label>
-                    <input type="date" id="res-date" placeholder='Enter Date'
+                    <input type="date" id="res-date" required placeholder='Enter Date'
                     value={date} onChange={handleDateChange}/>
                 </div>
 
                 <div className="form-group">
                     <label htmlFor="res-time">Choose time</label>
-                    <select id="res-time" >
+                    <select id="res-time" required>
                         {finalTime}
                     </select>
                 </div>
 
                 <div className="form-group">
-                    <label htmlFor="res-guests">Number of guests</label>    
-                    <input type="number" placeholder={1} min={1} max={10} id="res-guests" 
+                    <label htmlFor="res-guests">Guests</label>    
+                    <input type="number" placeholder={1} min={1} max={10} id="res-guests" required
                     value={numberOfGuests} onChange={e => setNumberOfGuests(e.target.value)}/>
                 </div>
 
                 <div className="form-group">
                     <label htmlFor="res-occasion">Occasion</label>
-                    <select id="res-occasion" value={occasion} onChange={setOccasion} >
+                    <select id="res-occasion" value={occasion} onChange={setOccasion} required>
                       <option>Birthday</option>
                       <option>Engagement</option>
                       <option>Anniversary</option>
