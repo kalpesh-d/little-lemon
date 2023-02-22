@@ -1,26 +1,23 @@
 import { useState } from 'react';
 import '../components/css/BookingForm.css'
 
-function BookingPage(props) { 
+function BookingPage() { 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [date, setDate] = useState("");
     const [numberOfGuests, setNumberOfGuests] = useState(1);
     const [occasion, setOccasion] = useState("");
-  
-    const [finalTime, setFinalTime] = useState(
-        props.availableTimes.map((times) => <option key={times}>{times}</option>)
-    );
+    const [availableTimes] = useState([
+        "17:00",
+        "18:00",
+        "19:00",
+        "20:00",
+        "21:00",
+        "22:00",
+    ]);
 
     function handleDateChange(e) {
       setDate(e.target.value);
-
-      var stringify = e.target.value;
-      const date = new Date(stringify);
-
-      props.updateTimes(date);
-
-      setFinalTime(props.availableTimes.map((times) => <option>{times}</option>));
     } 
 
     const handleSubmit = (e) => {
@@ -55,7 +52,11 @@ function BookingPage(props) {
                     <label htmlFor="res-time">Choose time</label>
                     <select id="res-time" required>
                         <option disabled selected>Select time</option>
-                        {finalTime}
+                        {
+                            availableTimes.map(time=> (
+                                <option>{time}</option>
+                            ))
+                        }
                     </select>
                 </div>
 
