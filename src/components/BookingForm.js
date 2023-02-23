@@ -20,8 +20,8 @@ function BookingPage() {
       setDate(e.target.value);
     } 
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
+    function handleSubmit(e) {
+        e.preventDefault();  
         window.location.href = "/confirmed";
     }
 
@@ -50,8 +50,7 @@ function BookingPage() {
 
                 <div className="form-group">
                     <label htmlFor="res-time">Choose time</label>
-                    <select id="res-time" required>
-                        <option disabled selected>Select time</option>
+                    <select id="res-time" required> 
                         {
                             availableTimes.map(time=> (
                                 <option>{time}</option>

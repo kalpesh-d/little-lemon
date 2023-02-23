@@ -1,7 +1,6 @@
 import Navigation from "../components/Navigation";
 import BookingForm from "../components/BookingForm";
 
-
 function Reservation() {
     return(
         <>
