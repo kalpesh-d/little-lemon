@@ -4,7 +4,7 @@ import Menu from './Routes/Menu';
 import OrderOnline from './Routes/OrderOnline'
 import Reservation from './Routes/Reservation';
 import Login from './Routes/Login';
-import Confirmed from './components/ConfirmedBooking.js'
+import Confirmed from './components/ConfirmedBooking'
 import './App.css';
 
 function App() {
