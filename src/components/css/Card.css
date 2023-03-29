@@ -1,5 +1,9 @@
+.card {
+  margin: 3rem;
+}
+
 .card-img {
-  width: 26.4rem;
+  width: 28rem;
   height: 18.5rem;
 }
 
@@ -12,8 +16,8 @@
 
 .card-content {
   background-color: #edefee;
-  width: 26.5rem;
-  height: 25.3rem;
+  width: 28rem;
+  height: 26rem;
   display: flex;
   justify-content: space-between;
   flex-direction: column;

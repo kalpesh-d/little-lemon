@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  margin: 0 1rem;
 }
 
 .review-container {
@@ -39,6 +40,6 @@
 
 @media screen and (min-width: 300px) and (max-width: 700px) {
   .review {
-    margin: 0.3rem;
+    margin: 1.2rem 0;
   }
 }
